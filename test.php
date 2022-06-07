@@ -24,15 +24,20 @@
     //     echo "<br>";
     // }
 
-    function fname(){
-        $a = 10;
-        $b = 20;
-        $c = $a + $b;
+    // function fname(){
+    //     $a = 10;
+    //     $b = 20;
+    //     $c = $a + $b;
 
-        echo $c;
+    //     echo $c;
 
+    // }
+    // fname();
+
+    function fname($a, $b){
+        echo $a + $b;
     }
-    fname();
 
+    fname(10,5);
     
 ?>
