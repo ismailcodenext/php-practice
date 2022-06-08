@@ -34,10 +34,40 @@
     // }
     // fname();
 
-    function fname($a, $b){
-        echo $a + $b;
+    // function fname($a, $b){
+    //     echo $a + $b;
+    // }
+
+    // fname(10,5);
+
+    ///associative array
+    
+    $color = [ "red", "green", "white"];
+
+    echo "<pre>";
+    var_dump($color);
+    echo "</pre>";
+
+
+
+    ///php foreach
+    // $color = [ "red", "green", "blue"];
+
+    // foreach($color as $value){
+    //     echo $value . "<br>";
+    // }
+
+    //foreach with key value
+
+    $age = [ "rahim" => 25,
+            "karim" => 30,
+            "kashem" => 28,
+    ];
+
+    foreach($age as $key => $value)
+    {
+        echo  "$key = $value <br>";
     }
 
-    fname(10,5);
     
 ?>
