@@ -42,11 +42,11 @@
 
     ///associative array
     
-    $color = [ "red", "green", "white"];
+    // $color = [ "red", "green", "white"];
 
-    echo "<pre>";
-    var_dump($color);
-    echo "</pre>";
+    // echo "<pre>";
+    // var_dump($color);
+    // echo "</pre>";
 
 
 
@@ -59,15 +59,35 @@
 
     //foreach with key value
 
-    $age = [ "rahim" => 25,
-            "karim" => 30,
-            "kashem" => 28,
+    // $age = [ "rahim" => 25,
+    //         "karim" => 30,
+    //         "kashem" => 28,
+    // ];
+
+    // foreach($age as $key => $value)
+    // {
+    //     echo  "$key = $value <br>";
+    // }
+
+    //Multidimantional Array
+
+    $emp = [
+            [1, "Rahim", "Manager", 30000],
+            [2, "Korim", "Salesman", 20000],
+            [3, "Jobbar", "Computer Operator", 25000],
+            [4, "Kashem", "Accounts", 28000],
     ];
 
-    foreach($age as $key => $value)
-    {
-        echo  "$key = $value <br>";
+    for ($row=0; $row< 4; $row++){
+        for($col=0; $col <4; $col++){
+            echo $emp[$row][$col]. " ";
+        }
+        echo "<br>";
     }
+
+    echo "<pre>";
+    var_dump($emp);
+    echo "</pre>";
 
     
 ?>
